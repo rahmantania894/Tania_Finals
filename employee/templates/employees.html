@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Employee Details</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Age</th>
+    <th>Phone Number</th>
+    <th>Address</th>
+    <th>Department</th>
+    <th>Salary</th>
+  </tr>
+
+    {% for employee in result %}
+  <tr>
+    <td>{{ employee.name }}</td>
+    <td>{{ employee.email }}</td>
+    <td>{{ employee.age }}</td>
+    <td>{{ employee.phone_number }}</td>
+    <td>{{ employee.address }}</td>
+    <td>{{ employee.department }}</td>
+    <td>{{ employee.salary }}</td>
+  </tr>
+    {%endfor%}
+</table>
+
+</body>
+</html>
